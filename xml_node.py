@@ -14,6 +14,11 @@ class XMLNode:
         tree = ElementTree.parse(filename)
         return cls(tree.getroot())
 
+    @classmethod
+    def from_string(cls, text):
+        tree = ElementTree.fromstring(text)
+        return cls(tree.getroot())
+
     def __getattr__(self, query):
         multi_children = []
         for element in self.elements:
