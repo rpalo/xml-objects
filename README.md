@@ -1,4 +1,4 @@
-# XML Node
+# XML Objects
 
 Makes managing XML a lot easier by making an XML document look like nested Python objects.
 
