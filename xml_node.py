@@ -46,5 +46,6 @@ class XMLNode:
 
 if __name__ == "__main__":
     xml = XMLNode.from_file('sample.xml')
+    print(xml.book.price.value)
     for book in xml.book:
         print(f"{book.title.value}, {book.author.value}, {book.price.value}")
